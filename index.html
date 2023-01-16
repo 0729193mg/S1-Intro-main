@@ -35,7 +35,7 @@
             <span>Valeur estimée ($) :</span><br>
             <input type="number" id="valeur">
         </div>
-        <div class="liste" id="maListe">
+        <div class="liste">
             <button onclick="ajouter()">Ajouter</button>
             <br>
             <button>Annuler</button>
@@ -45,28 +45,27 @@
     <div class="MaListe">
         <h2>Ma liste</h2>
 
-        <ul class="list">
-        <li>Crocs des fêtes : <span>14$</span></li>
-        <li>Une tuque des fêtes :<span>42$</span></li>
-        <li>Un chandail laid des fêtes :<span>25$</span></li>
-        <li>Total: 81$</li>
+        <ul class="list" id="maListe">
+            <li>Crocs des fêtes : <span>14$</span></li>
+            <li>Une tuque des fêtes :<span>42$</span></li>
+            <li>Un chandail laid des fêtes :<span>25$</span></li>
 
-    </ul>
+        </ul>
+    </div>
 
-        <div class="flex">
-            <div>
-                <p class="col-form-label">Destinataire:</p>
-            </div>
-            <div>
-                <input id="email" type="text">
-            </div>
+    <li id="Total">Total: 81$</li>
+
+    <div class="flex">
+        <div>
+            <p class="col-form-label">Destinataire:</p>
         </div>
-        <div class="flex bouton col-form-label">
-            <button>Confirmer et envoyer</button>
-            <button>Recommencer</button>
-
+        <div>
+            <input id="email" type="text">
         </div>
-
+    </div>
+    <div class="flex bouton col-form-label">
+        <button>Confirmer et envoyer</button>
+        <button>Recommencer</button>
 
     </div>
 
