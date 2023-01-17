@@ -15,7 +15,6 @@ function ajouter() {
     //créer un span sur la valeur monétaire
     let nouveauSpan = document.createElement("span");
 
-
     //Écrire dans la liste nouvellement créé
     nouveauLi.innerTest = item + " : "
     nouveauSpan.innerTest = prix + " $ "
