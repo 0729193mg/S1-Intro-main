@@ -25,6 +25,11 @@ body nav {
     color: #409B71;
     border-color: #409B71;
 }
+.BoutonAjout {
+  padding: 0.25rem;
+
+}
+
 body a {
     text-decoration: none;
     color: black;
@@ -34,32 +39,50 @@ body a {
 .navbar-brand {
 
 }
+
 .nav-item {
     font-size: 14px;
 }
 
 h1 {
-    font-size: 20px;
+    font-size: 1.575rem;
+    padding-left: 1rem;
 }
+
+.ms-1 {
+    padding-left: 1rem;
+}
+
 .flex {
     display: flex;
+    padding-left: 1rem;
 
 }
+
 .MaListe {
-padding-left: 3rem;
+    padding-left: 3rem;
 }
+
 ul li {
     list-style-type: none;
+    border: #9EA3B3 solid 1px;
+    padding:0.25rem;
+    font-size: 14px;
+
 }
 
 h2 {
-    font-size: 18px;
+    font-size: 20px;
+}
+h2,h3{
+    padding-bottom: 0.575rem;
 }
 
 .text-muted {
-    font-size: 12px;
+    font-size: 14px;
 
 }
+
 .col-form-label {
     display: flex;
     margin: 20px;
@@ -67,11 +90,25 @@ h2 {
 
 .bouton {
     justify-content: right;
-    margin: 15px;
-    padding: 1rem;
 }
 
 h1, h2, h3, h4 {
-    padding: 1rem;
+    padding-top: 1rem;
 }
 
+#Total {
+    text-align: right;
+    color: #9EA3B3;
+    font-size: 14px;
+
+}
+.gris {
+    color: #9EA3B3;
+}
+.gras {
+    font-weight: 700;
+}
+.petit {
+    font-size: 14px;
+
+}

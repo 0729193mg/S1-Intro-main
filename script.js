@@ -16,19 +16,18 @@ function ajouter() {
     let nouveauSpan = document.createElement("span");
 
 
-    //Écrire dans le paragraphe
+    //Écrire dans la liste nouvellement créé
     nouveauLi.innerTest = item + " : "
     nouveauSpan.innerTest = prix + " $ "
 
     //va mettre "nouveauLi" ds le ID "maListe" à la fin de la liste -- Ajouter le paragraphe à la ligne
     document.getElementById("maListe").append(nouveauLi);
 
-    //mettre le span à la fin de la liste
+    //mettre le nouveauSpan à la fin du nouveauLi
     nouveauLi.append(nouveauSpan);
 
 
     //Mettre à jour le total
-
     let ancienPrix = document.getElementById("Total").innerText;
     let nouveauPrix = +ancienPrix + +prix;  //+varible : convertir en numérique
 document.getElementById("Total").innerText = nouveauPrix;
@@ -43,6 +42,8 @@ document.getElementById("maListe").append(item);
 
 //Créer un Pop-up d'alerte
 alert("L'item est bien ajouté")
+
+
 
 
 
