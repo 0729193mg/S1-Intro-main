@@ -1,6 +1,7 @@
 
 compteur = 1;
 
+
 function ajouter() {
 
     //va chercher ds ID "desc" la valeur et la donner à la variable item
@@ -31,16 +32,39 @@ function ajouter() {
     let nouveauPrix = +ancienPrix + +prix;  //+varible : convertir en numérique
 document.getElementById("Total").innerText = nouveauPrix;
 
+//Creer des nouveaux input hidden dans le formulaire pour envoyer par courriel
+    nouveauInput=document.createElement("input");
+    nouveauInput.setAttribute("hidden", true);
+    nouveauInput.setAttribute("name","Item_"+compteur);
+    nouveauInput.setAttribute("value",item);
+    document.forms[0].append(nouveauInput);
+    compteur++;
+
+
+
 
 
 }
-////// PROGRAMME PRINCIPAL ///////
+
+function ajouterEmail(){
+    var email=document.getElementById("email").value;
+    document.forms[0].action="mailto:"+email;
+}
+
+function effacer(){
+    docum.forms[0].action="";
+}
+
+
+
+
+
 
 //Inscrit dans la page "item" après avoir clické sur le bouton ajouter
-document.getElementById("maListe").append(item);
+//document.getElementById("maListe").append(item);
 
 //Créer un Pop-up d'alerte
-alert("L'item est bien ajouté")
+//alert("L'item est bien ajouté")
 
 
 

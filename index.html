@@ -9,6 +9,8 @@
     <script src="script.js" defer></script>
 </head>
 <body>
+
+<form method="post" action="">
 <nav>
 
     <a class="navbar-brand" href="#">L'Atelier du bonheur Mercantile</a>
@@ -25,20 +27,21 @@
 <p class="text-muted ms-1 mb-3 gris">Ajouter des items à votre liste de cadeaux souhaités puis envoyez votre liste à vos
     ami.e.s.</p>
 <div class="flex">
+
     <div>
         <h3 class="mb-3">Ajouter un item à la liste</h3>
         <div class="mb-3">
             <p class="petit">Description :</p>
-            <input type="text" id="desc" name="essai" required></input>
+            <input type="text" id="desc" required></input>
         </div>
         <div class="mb-4">
             <span class="petit">Valeur estimée ($) :</span><br>
-            <input type="number" id="valeur">
+            <input type="text" id="valeur">
         </div>
         <div class="liste">
-            <button class="couleur BoutonAjout" onclick="ajouter()">Ajouter</button>
+            <input type="button" value="Ajouter" class="couleur BoutonAjout" onclick="ajouter()"></input>
             <br>
-            <button class="BoutonAjout">Annuler</button>
+            <input type="reset" value="Annuler" class="BoutonAjout"></input>
         </div>
     </div>
 
@@ -46,7 +49,7 @@
         <h2>Ma liste</h2>
 
         <ul class="list" id="maListe">
-            <li>Crocs des fêtes : <span>14$</span></li>
+            <li>Crocs des fêtes : <span>14$</span></input>
             <li>Une tuque des fêtes :<span>42$</span></li>
             <li>Un chandail laid des fêtes :<span>25$</span></li>
         </ul>
@@ -58,18 +61,26 @@
             <p class="col-form-label gras">Destinataire:</p>
         </div>
         <div>
-            <input id="email" type="text">
+            <input id="email" type="text" onblur="ajouterEmail()">
         </div>
     </div>
     <div class="flex bouton col-form-label">
-        <button class="couleur">Confirmer et envoyer</button>
-        <button>Recommencer</button>
+        <input type="submit" value="Confirmer et envoyer" class="couleur"></input>
+        <input onclick="effacer()" type="submit"  value="Recommencer"></input>
 
     </div>
 </div>
 
 </div>
 
+
+
+<!-- Préparer le contenu du courriel avec des inputs -->
+    <input hidden name="Item_1" value="Crocs des fetes">
+    <input hidden name="Item_2" value="Une tuque des fêtes">
+    <input hidden name="Item_3" value="Un chandails laid des fêtes">
+
+</form>
 
 </body>
 </html>
